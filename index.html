@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Slack HNG Portfolio</title>
+        <link href="mystyle.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    </head>
+    <body>
+        <!--Name Section-->
+        <div>
+            <p data-testid="slackUserName">ezeoba_hilary</p>
+        </div>
+        
+        <!--Display Picture Section-->
+        <div>
+			<img data-testid="slackDisplayImage" alt="ezeoba_hilary" src="C:\Users\EZEOBA HILARY\Documents\MY CODES\Slack HNG Portfolio\images/Hilary_Ezeoba.jpg"> 
+        </div>
+
+        <!--Current Day of the Week Section-->
+        <div data-testid="currentDayOfTheWeek">
+            <script data-testid="currentDayOfTheWeek">
+                const today = new Date();
+                const day = today.getDay();
+                const daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+                document.write(`${daylist[day]}`);
+            </script>
+        </div>
+    </br>
+
+        <!--Current UTC Time Section-->
+        <div>
+            <script data-testid="currentUTCTime">
+                let time = Date.now()
+                document.write(time);
+            </script>
+        </div>
+        
+        <!--Track Section-->
+        <div>
+            <p data-testid="myTrack">Frontend</p>
+        </div>
+
+        <!--GitHub URL Section-->
+        <div>
+            <a data-testid="githubURL" href="" target="_blank"></a>
+        </div>
+    </body>
+</html>
