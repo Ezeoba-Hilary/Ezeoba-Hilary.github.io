@@ -31,11 +31,12 @@
 
         <!--Current UTC Time Section-->
         <div>
-            <script data-testid="currentUTCTime">
+            <script data-testid="currentUTCTime"> 
                 let time = Date.now()
+		const time = document.getElementById("currentUTCTime");
 		console.log(time);
                 document.write(time);
-		    setTimeout(getcurrentTime, 1000);
+		setTimeout(getcurrentTime, 1000);
             </script>
         </div>
         
