@@ -6,6 +6,7 @@
         <title>Slack HNG Portfolio</title>
         <link href="mystyle.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<script src="main.js"></script>
     </head>
     <body>
         <!--Name Section-->
@@ -18,27 +19,12 @@
 		<img data-testid="slackDisplayImage" alt="ezeoba_hilary" src="images/Hilary_Ezeoba.jpg"> 
         </div>
 
-        <!--Current Day of the Week Section-->
+        <!--Current Time and Day of the Week Section-->
         <div>
-            <script data-testid="currentDayOfTheWeek">
-                const today = new Date();
-                const day = today.getDay();
-                const daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-                document.write(`${daylist[day]}`);
-            </script>
+            <p data-testid="currentDayOfTheWeek" id="today"></p>
+            <p data-testid="currentUTCTime" id="currentTime"></p>
         </div>
-    </br>
-
-        <!--Current UTC Time Section-->
-        <div>
-            <script data-testid="currentUTCTime"> 
-                let time = Date.now();
-		console.log(time);
-                document.write(time);
-		setTimeout(gettime, 1000);
-            </script>
-        </div>
-        
+            
         <!--Track Section-->
         <div>
             <p data-testid="myTrack">Frontend</p>
